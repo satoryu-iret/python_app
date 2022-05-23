@@ -4,4 +4,5 @@ print(new_menu)
 price = input('価格を入力してください:')
 print(price)
 
-INSERT INTO
+INSERT INTO te-burumei
+FROM
