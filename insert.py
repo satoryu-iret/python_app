@@ -1,4 +1,7 @@
-new_menu = input('追加するメニューを入力してください:')
+new_menu = input('追加するメニュー名を入力してください:')
 print(new_menu)
 
-text = input('価格を入力してください')
+price = input('価格を入力してください:')
+print(price)
+
+INSERT INTO
