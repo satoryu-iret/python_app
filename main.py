@@ -13,7 +13,8 @@ while True:
     if num == 1:
 
         # メニュー追加処理
-        New_Menu.insert_sql()
+        class Main1(input1.New_Menu):
+            New_Menu.insert_sql()
     
     elif num == 2:
 
