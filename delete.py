@@ -35,13 +35,16 @@ class Delete:
                 #inputで入力された値が整数だった場合
                 if delete_number.isdecimal():
                     print('削除する数字は' + delete_number + 'でよろしかったでしょうか？')
-                    delete_check = input('yesなら\"y\"、noなら他のキーを入力してください。')
+                    delete_check = input('yesなら\"y\"、noなら他のキーを入力してください。\n >')
                     
                     #yが入力された場合にのみDELETE文が実行されて、指定されたmenu_idをDBから削除
                     if delete_check == "y":
                         delete_sql = "DELETE FROM menu WHERE menu_id = %s"
                         cursor.execute(delete_sql,(delete_number,))
+                        delete_price_sql = "DELETE FROM menu_price WHERE menu_id = %s"
+                        cursor.execute(delete_price_sql,(delete_number,))
                         connection.commit()
+                        print(delete_number + 'のメニューは削除されました。' )
                         break                    
                     else:
                         print("noが選択されました。")
