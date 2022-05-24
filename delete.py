@@ -43,7 +43,7 @@ class Delete:
                 #inputで入力された値が整数だった場合
                 if delete_number.isdecimal():
                     print('削除する数字は' + delete_number + 'でよろしかったでしょうか？')
-                    delete_check = input('yesなら\"y\"、noならそれ以外を入力してください。')
+                    delete_check = input('yesなら\"y\"、noなら他のキーを入力してください。')
                     
                     #yが入力された場合にのみDELETE文が実行されて、指定されたmenu_idをDBから削除
                     if delete_check == "y":
