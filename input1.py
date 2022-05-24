@@ -33,7 +33,10 @@ class New_Menu:
 
             insert_sql = "INSERT INTO menu (menu_name, price) values(%s,%s)"
             cursor.execute(insert_sql,(new_menu, new_price,))
+            insert_sales = "INSERT INTO menu_sales (sales) values(0)"
+            cursor.execute(insert_sales)
             connection.commit()
+            
 
             print(new_menu + '(' + str(new_price) +')' +'を新メニューとして追加しました。')
 
