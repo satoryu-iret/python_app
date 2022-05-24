@@ -46,5 +46,5 @@ class SalesDisplay:
 
         return connection,cursor
 
-SalesDisplay.display()
+# SalesDisplay.display()
 

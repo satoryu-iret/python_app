@@ -74,4 +74,4 @@ class Management:
             if connection is not None:
                 connection.close()
 
-Management.connection()
+# Management.connection()

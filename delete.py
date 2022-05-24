@@ -76,4 +76,4 @@ class Delete:
             if connection is not None:
                 connection.close()
 
-Delete.sqlRow()
+# Delete.sqlRow()
