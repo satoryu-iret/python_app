@@ -2,12 +2,8 @@ use pythonapp;
 
 set names sjis;
 
-
-
 DROP TABLE IF EXISTS menu;
 DROP TABLE IF EXISTS menu_sales;
-
-
 
 CREATE TABLE menu (
   menu_id int NOT NULL AUTO_INCREMENT,
@@ -23,14 +19,36 @@ CREATE TABLE menu_sales (
 );
 
 
-INSERT INTO menu (menu_name,price) values('麻婆豆腐',820);
-INSERT INTO menu (menu_name,price) values('ラーメン',750);
-INSERT INTO menu (menu_name,price) values('回鍋肉',800);
+INSERT INTO menu (menu_name,price) values('???k????',820);
+INSERT INTO menu (menu_name,price) values('???[????',750);
+INSERT INTO menu (menu_name,price) values('????',800);
+INSERT INTO menu (menu_name,price) values('餃子',400);
+INSERT INTO menu (menu_name,price) values('エビチリ',780);
+INSERT INTO menu (menu_name,price) values('チャーハン',550);
+INSERT INTO menu (menu_name,price) values('ごま団子',320);
+INSERT INTO menu (menu_name,price) values('バニラアイス',250);
+INSERT INTO menu (menu_name,price) values('杏仁豆腐',300);
+INSERT INTO menu (menu_name,price) values('烏龍茶',300);
+INSERT INTO menu (menu_name,price) values('ジャスミンティー',300);
+INSERT INTO menu (menu_name,price) values('コーラ',350);
+INSERT INTO menu (menu_name,price) values('爽健美茶',300);
+INSERT INTO menu (menu_name,price) values('お子様セット(餃子,チャーハン)',500);
+
+
 
 INSERT INTO menu_sales (sales) values(0);
 INSERT INTO menu_sales (sales) values(0);
 INSERT INTO menu_sales (sales) values(0);
-
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
+INSERT INTO menu_sales (sales) values(0);
 
 select * from menu;
 select * from menu_sales;
