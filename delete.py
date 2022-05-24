@@ -32,14 +32,6 @@ class Delete:
                     print(row[0],row[1])
                 delete_number = input('削除したいメニューを数字で入力してください。戻りたい場合はeを入力してください。\n >')
 
-                # #入力された値がmenu_idの数以上の場合に削除するコマンド
-                # #実行できないためコメントアウト。
-                # if delete_number > len[rows] or delete_number == 0:
-                #     print("適切な数値が入力されました。")
-                # else:
-                #     print("入力された数値は不適切です。")
-
-
                 #inputで入力された値が整数だった場合
                 if delete_number.isdecimal():
                     print('削除する数字は' + delete_number + 'でよろしかったでしょうか？')
