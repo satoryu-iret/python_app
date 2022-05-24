@@ -22,7 +22,7 @@ class New_Menu:
 
             # 接続したDBからテーブルの情報を取得
             cursor = connection.cursor()
-            
+        
 
             new_menu = str(input('追加するメニュー名を入力してください:'))
             print(new_menu)
