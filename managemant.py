@@ -57,7 +57,7 @@ class Management:
                     #     else:
                     #         continue
                 else:
-                    print('数字で入力してください')
+                    print('数字で入力してください!')
                     break  
                 
 
