@@ -32,24 +32,19 @@ class Delete:
                     print(row[0],row[1])
                 delete_number = input('削除したいメニューを数字で入力してください。戻りたい場合はeを入力してください。\n >')
 
-                # #入力された値がmenu_idの数以上の場合に削除するコマンド
-                # #実行できないためコメントアウト。
-                # if delete_number > len[rows] or delete_number == 0:
-                #     print("適切な数値が入力されました。")
-                # else:
-                #     print("入力された数値は不適切です。")
-
-
                 #inputで入力された値が整数だった場合
                 if delete_number.isdecimal():
                     print('削除する数字は' + delete_number + 'でよろしかったでしょうか？')
-                    delete_check = input('yesなら\"y\"、noなら他のキーを入力してください。')
+                    delete_check = input('yesなら\"y\"、noなら他のキーを入力してください。\n >')
                     
                     #yが入力された場合にのみDELETE文が実行されて、指定されたmenu_idをDBから削除
                     if delete_check == "y":
                         delete_sql = "DELETE FROM menu WHERE menu_id = %s"
                         cursor.execute(delete_sql,(delete_number,))
+                        delete_price_sql = "DELETE FROM menu_price WHERE menu_id = %s"
+                        cursor.execute(delete_price_sql,(delete_number,))
                         connection.commit()
+                        print(delete_number + 'のメニューは削除されました。' )
                         break                    
                     else:
                         print("noが選択されました。")
