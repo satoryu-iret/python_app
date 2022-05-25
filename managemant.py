@@ -49,7 +49,7 @@ class Management:
             if connection is not None:
                 connection.close()
 
-Management.connection()
+# Management.connection()
 # 売り上げ管理
 # 実現したいこと
 # 一つ一つの既存のメニューに売り上げを入力する

@@ -41,7 +41,7 @@ class Delete:
                     if delete_check == "y":
                         delete_sql = "DELETE FROM menu WHERE menu_id = %s"
                         cursor.execute(delete_sql,(delete_number,))
-                        delete_price_sql = "DELETE FROM menu_price WHERE menu_id = %s"
+                        delete_price_sql = "DELETE FROM menu_sales WHERE menu_id = %s"
                         cursor.execute(delete_price_sql,(delete_number,))
                         connection.commit()
                         print(delete_number + 'のメニューは削除されました。' )
