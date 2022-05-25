@@ -34,4 +34,4 @@ while True:
         break
         
     else:
-        print('1～4の数字を入力してください')
+        print('1～5の数字を入力してください')
